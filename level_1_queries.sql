@@ -48,11 +48,3 @@ LEFT JOIN customer on
 --GROUP BY invoice.customer_id 
 ORDER BY total_spending DESC
 LIMIT 1;
-
-
-/* write a  query to return the email, first name, last name,
- & Genre of all Rock Music listener. Return your list orderd
-  alphabetically by email stating with A */
-
-
-SELECT * FROM track
