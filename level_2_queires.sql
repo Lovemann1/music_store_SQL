@@ -1,5 +1,5 @@
 
-/* Write query to return the email, first name, last name
+/* query_1:- Write query to return the email, first name, last name
  & Genre of all Rock Music listeners.
 Return your list ordered alphebitically by email starting
  with A*/
@@ -23,7 +23,7 @@ ORDER BY email
 
 
 
-/* let's invite the artists who have written the most rock music
+/* query_2:- let's invite the artists who have written the most rock music
 in our database. Write a query that returns the Artist name and 
 total track count of the top 10 rock bands */
 
@@ -42,7 +42,7 @@ LIMIT 10;
 
 
 
-/* Ruturn all the track names that have a song length longer
+/* query_3:-Ruturn all the track names that have a song length longer
 than the average song length. Retunn the Name and Miliseconds
 for each track Order by the song length with the longest no_of_songs
 listed first.*/

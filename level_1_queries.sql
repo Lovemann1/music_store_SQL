@@ -1,4 +1,4 @@
--- who is the senior most employee based on job title ?
+--query_1: who is the senior most employee based on job title ?
 
 SELECT *
 from employee
@@ -7,7 +7,7 @@ LIMIT 1;
 
 
 
---which country have the most invoice
+--query_2:which country have the most invoice
 
 SELECT billing_country , count(invoice_id) as total_invoices
 from invoice
@@ -16,13 +16,13 @@ ORDER BY total_invoices DESC;
 
 
 
---what are the top three valuses of total invoice
+--query_2:-what are the top three valuses of total invoice
 
 select * from invoice 
 ORDER BY total DESC
 LIMIT 3;
 
-/* which city has the best customers ? we would
+/*query_3:- which city has the best customers ? we would
  like to throw a promational Music Festival in the 
  city we made the most money. Write a query that returns
   one city that has the hightest sum of invoice totals.
@@ -33,7 +33,7 @@ from invoice
 GROUP BY billing_city
 ORDER BY sum DESC;
 
-/* who is the best customer ? The customer who has spent 
+/*query_4:- who is the best customer ? The customer who has spent 
 the most money wil be declared the best customer.
 Write a query that returns the person who has spent the
    most money.*/
