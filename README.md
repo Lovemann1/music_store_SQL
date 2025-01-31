@@ -108,6 +108,85 @@ LIMIT 1;
 | 5          | 144.54        | R          | Madhav    |
 
 **first we have to find the customer id of the customer who spent the most by add all the billing anount for each customer Id and the we have to use group by to find the name of these customer id's from customer table**
+<br>
+
+
+
+ 
+
+<br>
+
+
+
+
+
+
+<br>
+ 
+## level_2 queries
+### query_1:- Write query to return the email, first name, last name & Genre of all Rock Music listeners.Return your list ordered alphebitically by email starting with A
+```sql
+ with rock_lovers as 
+    (SELECT customer.first_name,
+        customer.last_name,
+        customer.email,
+        customer.customer_id,
+        --,invoice.invoice_id
+        --,track.genre_id
+        genre.name
+    from customer
+    JOIN invoice on customer.customer_id=invoice.customer_id
+    join invoice_line on invoice.invoice_id=invoice_line.invoice_id
+    join track on invoice_line.track_id = track.track_id
+    join genre on track.genre_id = genre.genre_id
+    where genre.name = 'Rock')
+SELECT DISTINCT* from rock_lovers
+ORDER BY email
+```
+**result**
+| First Name     | Last Name      | Email                          | Customer ID | Name |
+|----------------|----------------|--------------------------------|-------------|------|
+| Aaron          | Mitchell       | aaronmitchell@yahoo.ca         | 32          | Rock |
+| Alexandre      | Rocha          | alero@uol.com.br               | 11          | Rock |
+| Astrid         | Gruber         | astrid.gruber@apple.at         | 7           | Rock |
+| Bjørn          | Hansen         | bjorn.hansen@yahoo.no          | 4           | Rock |
+| Camille        | Bernard        | camille.bernard@yahoo.fr       | 39          | Rock |
+| Daan           | Peeters        | daan_peeters@apple.be          | 8           | Rock |
+| Diego          | Gutiérrez      | diego.gutierrez@yahoo.ar       | 56          | Rock |
+| Dan            | Miller         | dmiller@comcast.com            | 20          | Rock |
+| Dominique      | Lefebvre       | dominiquelefebvre@gmail.com    | 40          | Rock |
+| Edward         | Francis        | edfrancis@yachoo.ca            | 30          | Rock |
+| Eduardo        | Martins        | eduardo@woodstock.com.br       | 10          | Rock |
+| Ellie          | Sullivan       | ellie.sullivan@shaw.ca         | 33          | Rock |
+| Emma           | Jones          | emma_jones@hotmail.com         | 52          | Rock |
+| Enrique        | Muñoz          | enrique_munoz@yahoo.es         | 50          | Rock |
+| Fernanda       | Ramos          | fernadaramos4@uol.com.br       | 13          | Rock |
+
+**customer information is in customer table and genre information is in genre table for getting these information we have to combine totle 5 tables by join function and then we apply the condition that we want only rock genre after that we will get 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+not
+have
+hen
+hnd
+heo
+
+
 
 
 
