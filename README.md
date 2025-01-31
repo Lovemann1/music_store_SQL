@@ -102,6 +102,12 @@ LEFT JOIN customer on
 ORDER BY total_spending DESC
 LIMIT 1;
 ```
+**result**
+| Customer ID | Total Spending | First Name | Last Name |
+|------------:|--------------:|------------|-----------|
+| 5          | 144.54        | R          | Madhav    |
+
+**first we have to find the customer id of the customer who spent the most by add all the billing anount for each customer Id and the we have to use group by to find the name of these customer id's from customer table**
 
 
 
