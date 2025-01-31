@@ -5,5 +5,5 @@ on the basis of diffoculty level.
 
 # Dataset 
 The data set have 11 different tables and each table is connected with at least one another table. 
-Tables are containing information from employee to customer to music. the Ed diagram of the table is this
+Tables are containing information from employee to customer to music. the Ed diagram of the table is this ![ER Diagram](
 
