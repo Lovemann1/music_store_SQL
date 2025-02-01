@@ -6,7 +6,7 @@ on the basis of difficulty level.
 # Dataset 
 The data set have 11 different tables and each table is connected with at least one another table. 
 Tables are containing information from employee to customer to music. the Ed diagram of the table is this:-
-![ER Diagram](https://github.com/Lovemann1/music_store_project/blob/main/ER_diagram/ERD.jpeg) 
+![ER Diagram](https://github.com/Lovemann1/music_store_project/blob/main/Assets/ERD.jpeg?raw=true) 
 
 
 # The Questions and Their Analysis 
